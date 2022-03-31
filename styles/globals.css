@@ -4,6 +4,8 @@
   --mobile-breakpoint: 500;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 @font-face {
   font-family: 'Proximate';
   src: url('../public/fonts/Proximate-Regular.ttf'), url('../public/fonts/Proximate-Regular.eot');
@@ -17,7 +19,33 @@ body {
   font-family: Proximate;
   background-color:black;
 }
-
+.center {
+  text-align: center;
+  margin:0 auto;
+}
+.section-title {
+  color: white;
+  /* margin:3rem; */
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+  font-size:3rem;
+}
+.section-subtitle {
+  color: var(--theme-primary);
+  font-size: 2rem;
+}
+.left-bg-accent {
+  background-image: url("/images/bgdot-grid.png");
+  background-position: left;
+  background-size:30%;
+  background-repeat:no-repeat;
+}
+.right-bg-accent {
+  background-image: url("/images/bgdot-grid.png");
+  background-position: right;
+  background-size:30%;
+  background-repeat:no-repeat;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
