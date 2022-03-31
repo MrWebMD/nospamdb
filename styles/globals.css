@@ -1,16 +1,35 @@
-html,
+:root {
+  --theme-primary: #e76300;
+  --theme-primary-light: #fa8a35;
+  --mobile-breakpoint: 500;
+}
+
+@font-face {
+  font-family: 'Proximate';
+  src: url('../public/fonts/Proximate-Regular.ttf'), url('../public/fonts/Proximate-Regular.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Proximate;
+  background-color:black;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-* {
-  box-sizing: border-box;
+::webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-primary);
+}
+
+::webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary-light);
 }

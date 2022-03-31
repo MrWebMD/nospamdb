@@ -1,0 +1,14 @@
+.overview {
+  height:50rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder {
+  flex-grow: 0;
+  width:90vw;
+  max-width:40rem;
+  margin: 3rem;
+}
